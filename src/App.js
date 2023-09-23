@@ -59,9 +59,12 @@ function App() {
       </div>
       <button className="btn">Sign up</button>
       <ul>
+        <span className="bottomClick">
         <li>LOG IN</li>
         <li>FORGOT PASSWORD?</li>
         <li>HOME</li>
+        </span>
+        
       </ul>
     </div>
   );
