@@ -1,47 +1,68 @@
-import './App.css'
+import "./App.css";
 function App() {
   return (
-    <div className="createApp"> 
+    <div className="createApp">
       <h1>CREATE NEW ACCOUNT</h1>
       <div className="form1">
         <form className="formleft">
-          <label>Firstname:</label>
+          <span>
+            <label>Firstname:</label>
+            <label>Lastname:</label>
+          </span>
+          <span>
           <input type="text" />
-          <label>Lastname:</label>
           <input type="text" />
+          </span>
+          <span>
           <label>Tel:</label>
-          <input type="text" />
           <label>ID line:</label>
+          </span>
+          <span>
           <input type="text" />
+          <input type="text" />
+          </span>
           <label>Email:</label>
           <input type="email" />
           <label>Password:</label>
           <input type="password" />
           <label>ID Card:</label>
           <input type="text" />
+          <span>
           <label>religion:</label>
-          <input type="text" />
           <label>Nationality:</label>
-          <input type="text" />
           <label>Race:</label>
+          </span>
+          <span>
           <input type="text" />
+          <input type="text" />
+          <input type="text" />
+          </span>
         </form>
         <form className="formright">
           <label>Ouccupation:</label>
           <input type="text" />
           <label>Date of Birth:</label>
           <input type="text" />
+          <span>
           <label>Weight:</label>
-          <input type="number" />
           <label>Height:</label>
+          </span>
+          <span>
           <input type="number" />
-          <label>Address</label>
+          <input type="number" />
+          </span>
+          <label>Address:</label>
           <input type="text" />
           <label>Allergy History:</label>
           <input type="text" />
         </form>
       </div>
       <button className="btn">Sign up</button>
+      <ul>
+        <li>LOG IN</li>
+        <li>FORGOT PASSWORD?</li>
+        <li>HOME</li>
+      </ul>
     </div>
   );
 }
