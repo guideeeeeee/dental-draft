@@ -1,7 +1,47 @@
 import "./App.css";
+
+import React, { useState } from 'react';
+import VisibilityIcon from '@mui/icons-material/Visibility';
+import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 function App() {
+  const [showPassword, setShowPassword] = useState(false);
+  function togglePasswordVisibility() {
+    setShowPassword(!showPassword);
+  }
   return (
-    <div className="createApp">
+    <div className="app">
+      <div className="tabbar">
+      <img className="logo" src="./component/logo.png" alt="Logo" />
+      <ul className="manu">
+        <li className="nav-item">
+          <a href="#" className="tab-link">
+            <img id="img" src="./component/findUs.svg" alt="find us" />
+            FIND US
+          </a>
+        </li>
+        <li className="nav-item">
+          <a href="https://www.youtube.com/watch?v=oUoge5ED6Yw" className="tab-link">
+            <img id="img" src="./component/call.svg" alt="call" />
+            02648465
+          </a>
+        </li>
+        <li className="nav-item">
+          <a href="https://www.youtube.com/watch?v=oUoge5ED6Yw" className="tab-link">
+            <img id="img" src="./component/profile.svg" alt="profile" />
+            PROFILE
+          </a>
+        </li>
+        <li className="nav-item">
+          <a href="https://www.youtube.com/watch?v=oUoge5ED6Yw" className="tab-link">
+            <p id="round">
+              <img id="img" src="./component/calendar.svg" alt="calendar" />
+              <span className="h1"> BOOK APPOINMANT</span>
+            </p>
+          </a>
+        </li>
+      </ul>
+      </div>
+      <div className="createApp">
       <h1>CREATE NEW ACCOUNT</h1>
       <div className="form1">
         <form className="formleft">
@@ -40,11 +80,13 @@ function App() {
             <label>Password:</label>
             <input type="password" />
           </div>
+
           {/* confirm password */}
           <div className="name-text">
             <label>Confirm password:</label>
             <input type="password" />
           </div>
+
           {/* ID card */}
           <div className="name-text">
             <label>ID Card:</label>
@@ -52,6 +94,7 @@ function App() {
           </div>
         </form>
         <form className="formright">
+
           {/* religion Nation */}
           <div className="column">
             <div className="column-name-text">
@@ -63,6 +106,7 @@ function App() {
               <input type="text" />
             </div>
           </div>
+
           {/* dob race */}
           <div className="column">
             <div className="column-name-text">
@@ -74,11 +118,13 @@ function App() {
               <input type="text" />
             </div>
           </div>
+
           {/* ouccupation */}
           <div className="name-text">
             <label>Ouccupation:</label>
             <input type="text" />
           </div>
+
           {/* weight height */}
           <div className="column">
             <div className="column-name-text">
@@ -90,17 +136,18 @@ function App() {
               <input type="number" />
             </div>
           </div>
+
+          {/* address */}
           <div className="name-text">
             <label>Address:</label>
             <input type="text" />
           </div>
+
+          {/* history */}
           <div className="name-text">
           <label>Allergy History:</label>
           <input type="text" />
           </div>
-          {/*
-          
-           */}
         </form>
       </div>
       <button className="btn">Sign up</button>
@@ -112,6 +159,8 @@ function App() {
         </span>
       </ul>
     </div>
+    </div>
+    
   );
 }
 
