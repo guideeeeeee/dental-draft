@@ -1,5 +1,9 @@
 import "./App.css";
-
+import logo from './component/logo.png';
+import findUs from './component/findUs.svg';
+import Profile from './component/profile.svg';
+import call from './component/call.svg';
+import calendar from './component/calandar.svg';
 import React, { useState } from 'react';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
@@ -11,31 +15,31 @@ function App() {
   return (
     <div className="app">
       <div className="tabbar">
-      <img className="logo" src="./component/logo.png" alt="Logo" />
+      <img className="logo" src={logo} alt="Logo" />
       <ul className="manu">
         <li className="nav-item">
           <a href="#" className="tab-link">
-            <img id="img" src="./component/findUs.svg" alt="find us" />
+            <img id="img" src={findUs} alt="find us" />
             FIND US
           </a>
         </li>
         <li className="nav-item">
           <a href="https://www.youtube.com/watch?v=oUoge5ED6Yw" className="tab-link">
-            <img id="img" src="./component/call.svg" alt="call" />
+            <img id="img" src={call} alt="call" />
             02648465
           </a>
         </li>
         <li className="nav-item">
           <a href="https://www.youtube.com/watch?v=oUoge5ED6Yw" className="tab-link">
-            <img id="img" src="./component/profile.svg" alt="profile" />
+            <img id="img" src={Profile} alt="profile" />
             PROFILE
           </a>
         </li>
         <li className="nav-item">
           <a href="https://www.youtube.com/watch?v=oUoge5ED6Yw" className="tab-link">
             <p id="round">
-              <img id="img" src="./component/calendar.svg" alt="calendar" />
-              <span className="h1"> BOOK APPOINMANT</span>
+              <img id="img" src={calendar} alt="calendar" />
+              <span className="h1"> BOOK APPOINTMENT</span>
             </p>
           </a>
         </li>
