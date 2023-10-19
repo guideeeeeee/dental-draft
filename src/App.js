@@ -7,10 +7,14 @@ import calendar from './component/calandar.svg';
 import React, { useState } from 'react';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
+import { IconButton, InputAdornment } from "@mui/material";
 function App() {
-  const [showPassword, setShowPassword] = useState(false);
-  function togglePasswordVisibility() {
-    setShowPassword(!showPassword);
+  const EndAdorment = () =>{
+    return <InputAdornment position = "end">
+      <IconButton>
+        <VisibilityIcon/>
+      </IconButton>
+    </InputAdornment>
   }
   return (
     <div className="app">
@@ -82,7 +86,7 @@ function App() {
           {/* password */}
           <div className="name-text">
             <label>Password:</label>
-            <input type="password" />
+            <input type="password"/>
           </div>
 
           {/* confirm password */}

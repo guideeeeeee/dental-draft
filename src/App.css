@@ -123,29 +123,21 @@ html{
 a{
   text-decoration: none;
 }
+.app{
+  background-image: url(/src/component/image\ 2.png);
+}
 .createApp {
+  border-radius: 5%;
   margin-top: 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(/src/component/image\ 2.png);
+  background: rgba(255, 46, 46, 0.5); /*ตรงนี้ใช้สีแดงไปก่อน มันจะได้เห็นชัดแล้วค่อยเปลี่ยนเป็นสีขาว*/
 }
 
 .form1 {
+  padding: 10px;
   display: flex;
-}
-
-.formleft,
-.formright {
-  display: flex;
-  flex-direction: column;
-}
-
-.formleft label,
-.formright label,
-.formleft input,
-.formright input {
-  margin-bottom: 10px;
 }
 
 .formleft {
