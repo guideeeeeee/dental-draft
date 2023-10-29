@@ -107,7 +107,7 @@
       left: 0;
   }
 }/*tabbar*/
-body{
+*{
   font-family: 'Monda', sans-serif;
 }
 
@@ -125,14 +125,22 @@ a{
 }
 .app{
   background-image: url(/src/component/image\ 2.png);
+  width:100vw;
+  height: 100vh;
+  display: flex;
+  justify-content:center;
 }
 .createApp {
+  color: #769FCD;
   border-radius: 5%;
-  margin-top: 5%;
+  margin-top: 9%;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
-  background: rgba(255, 46, 46, 0.5); /*ตรงนี้ใช้สีแดงไปก่อน มันจะได้เห็นชัดแล้วค่อยเปลี่ยนเป็นสีขาว*/
+  background: rgba(255, 255, 255, 0.616); /*ตรงนี้ใช้สีแดงไปก่อน มันจะได้เห็นชัดแล้วค่อยเปลี่ยนเป็นสีขาว*/
+  width: 70vw;
+  height: 75vh;
 }
 
 .form1 {
@@ -149,41 +157,19 @@ a{
 }
 
 .btn {
+  background-color: #769FCD;
+  border: 0 ;
+  color: #ffffff;
   display: flex;
   margin-top: 20px;
-  border-radius: 10px;
+  font-size: 20px;
+  font-weight:regular;
+  border-radius: 15px;
   padding: 10px;
 }
-span{
-  display: flex;
-}
-/* li{
-  position: relative;
-  display: block;
-  transition: 0.5s;
-  cursor: pointer;
-}
-li::after{
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 3px;
-  top: 100%;
-  left: 0;
-  transition: transform 0.5s;
-  transform: scaleX(0);
-  transform-origin:right ;
-  background-color: black;
-}
-li:hover{
-  color: black;
-}
-li:hover::after{
-  transform: scaleX(1);
-  transform-origin: left;
-} */
+
 input{
-  border-radius: 10px;
+  border-radius: 20px;
   padding : 10px;
 }
 .bottomClick li{
@@ -203,3 +189,22 @@ input{
   display: flex;
   flex-direction:column;
 }
+.password-input{
+  display: flex;
+  flex-direction:column;
+  position: relative;
+  }
+  
+.show-hide-icon{
+  position: absolute;
+  top: 66%;
+  right: 10px;
+  transform: translateY(-50%);
+  display: flex;
+  align-Items: center;
+  cursor:pointer;
+  }
+  
+.show-hide-icon{
+  margin-Right: 4px;
+  }
